@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28D7D4DA-F895-494F-BC78-BAA24472AC83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DishesApp</RootNamespace>
+    <AssemblyName>DishesApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DishesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DishesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogAndMain\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogAndMain\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogAndMain\MainPageAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogAndMain\MainPageAdmin.Designer.cs">
+      <DependentUpon>MainPageAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogAndMain\MainPageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogAndMain\MainPageUser.Designer.cs">
+      <DependentUpon>MainPageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TablesAddForms\CountriesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\CountriesAdd.Designer.cs">
+      <DependentUpon>CountriesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\CustomersAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\CustomersAdd.Designer.cs">
+      <DependentUpon>CustomersAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\DishesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\DishesAdd.Designer.cs">
+      <DependentUpon>DishesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\DishTypesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\DishTypesAdd.Designer.cs">
+      <DependentUpon>DishTypesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\InstrumentsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\InstrumentsAdd.Designer.cs">
+      <DependentUpon>InstrumentsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\Inst_No_DescAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\Inst_No_DescAdd.Designer.cs">
+      <DependentUpon>Inst_No_DescAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\Inst_To_DishAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\Inst_To_DishAdd.Designer.cs">
+      <DependentUpon>Inst_To_DishAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\Inst_To_ShopAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\Inst_To_ShopAdd.Designer.cs">
+      <DependentUpon>Inst_To_ShopAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\ProductsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\ProductsAdd.Designer.cs">
+      <DependentUpon>ProductsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\Prod_To_DishAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\Prod_To_DishAdd.Designer.cs">
+      <DependentUpon>Prod_To_DishAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\Prod_To_ShopAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\Prod_To_ShopAdd.Designer.cs">
+      <DependentUpon>Prod_To_ShopAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\ReviewsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\ReviewsAdd.Designer.cs">
+      <DependentUpon>ReviewsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeTables.Designer.cs">
+      <DependentUpon>SeeTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablesAddForms\ShopsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablesAddForms\ShopsAdd.Designer.cs">
+      <DependentUpon>ShopsAdd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LogAndMain\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogAndMain\MainPageAdmin.resx">
+      <DependentUpon>MainPageAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogAndMain\MainPageUser.resx">
+      <DependentUpon>MainPageUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SeeTables.resx">
+      <DependentUpon>SeeTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\CountriesAdd.resx">
+      <DependentUpon>CountriesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\CustomersAdd.resx">
+      <DependentUpon>CustomersAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\DishesAdd.resx">
+      <DependentUpon>DishesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\DishTypesAdd.resx">
+      <DependentUpon>DishTypesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\InstrumentsAdd.resx">
+      <DependentUpon>InstrumentsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\Inst_No_DescAdd.resx">
+      <DependentUpon>Inst_No_DescAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\Inst_To_DishAdd.resx">
+      <DependentUpon>Inst_To_DishAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\Inst_To_ShopAdd.resx">
+      <DependentUpon>Inst_To_ShopAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\ProductsAdd.resx">
+      <DependentUpon>ProductsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\Prod_To_DishAdd.resx">
+      <DependentUpon>Prod_To_DishAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\Prod_To_ShopAdd.resx">
+      <DependentUpon>Prod_To_ShopAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\ReviewsAdd.resx">
+      <DependentUpon>ReviewsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablesAddForms\ShopsAdd.resx">
+      <DependentUpon>ShopsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DishesDataSet.xsc">
+      <DependentUpon>DishesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DishesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DishesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DishesDataSet.xss">
+      <DependentUpon>DishesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
